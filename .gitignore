@@ -20,6 +20,7 @@ eggs/
 # Virtual environment directory, commonly named 'venv'
 venv/
 env/
+env
 .env
 
 # -----------------
