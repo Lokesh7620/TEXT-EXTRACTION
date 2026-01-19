@@ -16,7 +16,13 @@ python-dotenv==1.0.1
 # OCR Engines (All FREE - In Priority Order for Handwriting)
 # ============================================================
 
-# 1. TrOCR - BEST for handwriting (Microsoft/HuggingFace)
+# 1. EasyOCR - Primary OCR engine
+#    - Very good for both handwritten and printed text
+#    - GPU acceleration support
+#    - Lightweight and fast
+easyocr==1.7.1
+
+# 2. TrOCR - BEST for handwriting (Microsoft/HuggingFace)
 #    - Most accurate for handwritten text
 #    - Deep learning based
 #    - Supports cursive and print
@@ -25,18 +31,12 @@ torch==2.2.0
 torchvision==0.17.0
 sentencepiece==0.2.0
 
-# 2. PaddleOCR - Excellent alternative for handwriting
+# 3. PaddleOCR - Excellent alternative for handwriting
 #    - Good for both handwritten and printed text
 #    - Fast and accurate
 #    - Supports multiple languages
 paddlepaddle==2.6.2
 paddleocr==2.7.3
-
-# 3. EasyOCR - Great for printed text
-#    - Very good for clear printed documents
-#    - Easy to use
-#    - GPU acceleration support
-easyocr==1.7.1
 
 # 4. Tesseract - Fast fallback option
 #    - Fast processing
