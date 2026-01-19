@@ -1,0 +1,70 @@
+# -----------------
+# Python-specific
+# -----------------
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+eggs/
+*.egg-info/
+.installed.cfg
+
+# Environments
+# Virtual environment directory, commonly named 'venv'
+venv/
+env/
+.env
+
+# -----------------
+# Frameworks & Tools
+# -----------------
+# Database files
+# For local development databases like SQLite (e.g., in the 'instance' folder)
+# NOTE: If 'database.db' contains production data, you MUST commit it.
+# However, for a typical web app, it's a local artifact.
+instance/database.db
+*.sqlite3
+*.db
+
+# Environment variables and local configuration (Security Risk if committed!)
+.flaskenv
+.secret
+local_settings.py
+
+# Dependency lock files (keep requirements.txt in source control)
+Pipfile.lock
+poetry.lock
+
+# -----------------
+# Editor and OS
+# -----------------
+# VS Code
+.vscode/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# -----------------
+# Application Outputs & Logs
+# -----------------
+# Log files
+*.log
+logs/
+
+# Uploads / Static generated files
+# User-uploaded files or large outputs (e.g., in 'static/uploads')
+static/uploads/
+*.pdf # Generated PDFs, if any (like from PDF_generator.py)
+*.out
+*.tmp
+
+# Ignore specific files mentioned in your structure if they are temporary/local
+instance/smart_doc_extractor.db # Assuming this is another local database/file
